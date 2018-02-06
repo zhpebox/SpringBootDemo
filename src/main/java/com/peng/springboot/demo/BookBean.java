@@ -4,8 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-//@Component      //不加这个注解的话, 使用@Autowired 就不能注入进去了
-//@ConfigurationProperties(prefix = "my.book")  // 配置文件中的前缀
 @Component
 @ConfigurationProperties(prefix = "book")
 @PropertySource("classpath:book.properties")
